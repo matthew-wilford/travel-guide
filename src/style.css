@@ -12,6 +12,16 @@
   --accent-bg: rgba(136, 144, 99, 0.12);
   --accent-border: rgba(136, 144, 99, 0.3);
   --social-bg: rgba(229, 215, 196, 0.7);
+  --primary: #4c3d19;
+  --secondary: #354024;
+  --surface-soft: #e5d7c4;
+  --surface: #f2e9d4;
+  --page-background: #f7f1e2;
+  --placeholder: #a98d6c;
+  --button-start: #354024;
+  --button-end: #889063;
+  --button-hover-start: #4c5a2b;
+  --button-hover-end: #9aa36a;
   --shadow:
     rgba(76, 61, 25, 0.08) 0 10px 15px -3px,
     rgba(76, 61, 25, 0.03) 0 4px 6px -2px;
@@ -166,10 +176,64 @@ body {
 
 #facts-output,
 #facts-output h2 {
-  color: #354024 !important;
+  color: var(--secondary) !important;
 }
 
 #facts-output h2 {
   margin: 0;
   font-weight: 600;
 }
+
+.bg-surface-soft {
+  background-color: var(--surface-soft);
+}
+
+.bg-surface {
+  background-color: var(--surface);
+}
+
+.bg-page {
+  background-color: var(--page-background);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.border-border {
+  border-color: var(--border);
+}
+
+.input-shadow {
+  box-shadow: 0 0 0 1px rgba(76, 61, 25, 0.05), 0 2px 4px rgba(76, 61, 25, 0.05);
+}
+
+.placeholder-custom::placeholder {
+  color: var(--placeholder);
+}
+
+.focus-ring-accent:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(136, 144, 99, 0.3);
+}
+
+.btn-gradient {
+  background-image: linear-gradient(90deg, var(--button-start) 0%, var(--button-end) 100%);
+}
+
+.btn-text-inverse {
+  color: var(--surface);
+}
+
+.btn-shadow {
+  box-shadow: 0 14px 30px -14px rgba(53, 64, 36, 0.15);
+}
+
+.btn-hover-gradient:hover {
+  background-image: linear-gradient(90deg, var(--button-hover-start) 0%, var(--button-hover-end) 100%);
+}
+
