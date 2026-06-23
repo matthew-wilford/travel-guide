@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>travel-guide</title>
+  </head>
+  <body>
+    <div id="app">
+      <section
+        id="center"
+        class="min-h-screen flex items-center justify-center bg-[#E5D7C4] px-6 py-12 text-[#4C3D19]"
+      >
+        <div
+          class="w-full max-w-3xl space-y-10 rounded-[2rem] border border-[#CFBB99] bg-white p-8 shadow-[0_25px_60px_-25px_rgba(76,61,25,0.15)] sm:p-10"
+        >
+          <div
+            id="img-container"
+            class="min-h-[18rem] rounded-[1.75rem] bg-[#F2E9D4] shadow-inner"
+          ></div>
+          <div
+            id="facts-output"
+            class="space-y-2 text-sm font-medium text-[#354024]"
+          ></div>
+          <div class="space-y-3 text-center">
+            <h1
+              class="text-4xl font-semibold tracking-tight text-[#4C3D19] sm:text-5xl"
+            >
+              Your visit starts here
+            </h1>
+          </div>
+          <form action="" method="get" class="grid gap-6">
+            <div class="space-y-2 text-left">
+              <label
+                for="city-input"
+                class="block text-sm font-semibold text-[#354024]"
+                >Enter your destination</label
+              >
+              <input
+                id="city-input"
+                name="city-input"
+                type="text"
+                required
+                placeholder="e.g., Philadelphia"
+                class="block w-full rounded-[1.75rem] border border-[#889063] bg-[#F7F1E2] px-5 py-4 text-base text-[#4C3D19] shadow-sm shadow-[#4C3D19]/5 placeholder:text-[#A98D6C] transition duration-200 ease-out focus:border-[#354024] focus:outline-none focus:ring-2 focus:ring-[#889063]/30 focus:ring-offset-2 focus:ring-offset-[#F7F1E2]"
+              />
+            </div>
+            <button
+              id="search-btn"
+              type="submit"
+              class="inline-flex w-full items-center justify-center gap-2 rounded-[1.75rem] bg-gradient-to-r from-[#354024] to-[#889063] px-6 py-4 text-base font-semibold text-[#F2E9D4] shadow-lg shadow-[#354024]/15 transition duration-200 hover:scale-[1.01] hover:shadow-xl hover:from-[#4C5A2B] hover:to-[#9AA36A] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#354024]"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
