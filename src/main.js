@@ -1,5 +1,5 @@
-const U_ACCESS_KEY = "wqtX19pGrcGDoUJjU-wXgOuGOMQGmjA1e4bSmh4k5N8"; // replace with your Unsplash key
-const BW_ACCESS_KEY = "bw_live_6db1254f2a36f10f6b3dc8fa32fd7ccfY"; // replace with your Bamwor key
+const U_ACCESS_KEY = "wqtX19pGrcGDoUJjU-wXgOuGOMQGmjA1e4bSmh4k5N8"; // Unsplash API key
+const BW_ACCESS_KEY = "bw_live_6db1254f2a36f10f6b3dc8fa32fd7ccf"; // Bamwar API key
 
 const cityInput = document.getElementById("city-input");
 const searchBtn = document.getElementById("search-btn");
